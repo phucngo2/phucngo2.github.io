@@ -1,48 +1,22 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
-
+name: Build and Deploy React App to GitHub Pages
 on:
-    # Runs on pushes targeting the default branch
     push:
-        branches: ["master"]
-
-    # Allows you to run this workflow manually from the Actions tab
-    workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-    contents: read
-    pages: write
-    id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-    group: "pages"
-    cancel-in-progress: true
-
+        branches: [main]
 jobs:
-    # Single deploy job since we're just deploying
-    deploy:
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
+    build-push-gcr:
+        name: Build and Deploy
         runs-on: ubuntu-latest
-
-        strategy:
-            matrix:
-                node-version: [12.x, 14.x, 16.x]
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
-            - name: Use node ${{ matrix.node-version }}
-              uses: actions/setup-node@v1
-              with:
-                  node-version: ${{ matrix.node-version }}
-            - run: npm ci
-            - run: npm run build
+              uses: actions/checkout@v2
+
+            - name: Build
+              run: npm install
+
             - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  folder: .
-                  branch: gh-pages
+              run: |
+                  git config user.name 'phucnnh21'
+                  git config user.email 'phucnnh21@gmail.com'
+                  git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}    
+                  npm run deploy
