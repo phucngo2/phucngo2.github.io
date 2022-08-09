@@ -29,11 +29,11 @@ const programingLanguages = [
         src: "java/java-original-wordmark.svg",
         href: "https://www.java.com/en/",
     },
-    {
-        name: "C",
-        src: "c/c-original.svg",
-        href: "https://www.cprogramming.com/",
-    },
+    // {
+    //     name: "C",
+    //     src: "c/c-original.svg",
+    //     href: "https://www.cprogramming.com/",
+    // },
 ];
 
 const librariesAndFramworks = [
@@ -57,16 +57,16 @@ const librariesAndFramworks = [
         src: "graphql/graphql-plain.svg",
         href: "https://graphql.org/",
     },
-    {
-        name: "Bootstrap",
-        src: "bootstrap/bootstrap-plain.svg",
-        href: "https://getbootstrap.com/",
-    },
-    {
-        name: "TailwindCSS",
-        src: "tailwindcss/tailwindcss-plain.svg",
-        href: "https://tailwindcss.com/",
-    },
+    // {
+    //     name: "Bootstrap",
+    //     src: "bootstrap/bootstrap-plain.svg",
+    //     href: "https://getbootstrap.com/",
+    // },
+    // {
+    //     name: "TailwindCSS",
+    //     src: "tailwindcss/tailwindcss-plain.svg",
+    //     href: "https://tailwindcss.com/",
+    // },
     {
         name: "Svelte",
         src: "svelte/svelte-original.svg",
@@ -123,11 +123,11 @@ const others = [
         src: "docker/docker-original.svg",
         href: "https://www.docker.com/",
     },
-    {
-        name: "Unity",
-        src: "unity/unity-original.svg",
-        href: "https://unity.com/",
-    },
+    // {
+    //     name: "Unity",
+    //     src: "unity/unity-original.svg",
+    //     href: "https://unity.com/",
+    // },
 ];
 
 export const skilsRender = [

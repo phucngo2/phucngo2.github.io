@@ -15,10 +15,10 @@ const experience = [
         description: "INTERNSHIP",
     },
     {
-        name: "Future...",
-        img: "/img/experience/Future.png",
-        time: "Now - Future",
-        description: "",
+        name: "DXT Technology",
+        img: "/img/experience/DXT.jpg",
+        time: "08/2022 - Now",
+        description: "JUNIOR FULL-STACK DEVELOPER",
     },
 ];
 

@@ -34,7 +34,12 @@ function App() {
             />
 
             {/* Hamburger button on mobile to show nav */}
-            <button onClick={showNav} className="menu-btn btn btn-dark">
+            <button
+                onClick={showNav}
+                className="menu-btn btn btn-dark"
+                type="button"
+                aria-label="Menu"
+            >
                 {settingNav === "" ? (
                     <Icon icon={["fas", "bars"]} color="white" />
                 ) : (
@@ -47,11 +52,23 @@ function App() {
                 className="right"
                 onClick={() => settingNav && setSettingNav("")}
             >
-                <Profile setActivePage={setActivePage} />
-                <Experience />
-                <Skills />
-                <Projects />
-                <Certificates />
+                <Profile
+                    activePage={activePage}
+                    setActivePage={setActivePage}
+                />
+                <Experience
+                    activePage={activePage}
+                    setActivePage={setActivePage}
+                />
+                <Skills activePage={activePage} setActivePage={setActivePage} />
+                <Projects
+                    activePage={activePage}
+                    setActivePage={setActivePage}
+                />
+                <Certificates
+                    activePage={activePage}
+                    setActivePage={setActivePage}
+                />
             </div>
         </div>
     );

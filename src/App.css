@@ -65,6 +65,10 @@
     font-size: 14px;
 }
 
+.text-12 {
+    font-size: 12px;
+}
+
 @media screen and (min-width: 768px) {
     .left {
         width: 20vw;
@@ -100,4 +104,5 @@ h3 {
     text-decoration: underline;
     font-weight: bold;
     color: #2e4c71;
+    font-size: 24px;
 }

@@ -24,11 +24,6 @@ export const pageList = [
 export const links = [
     { name: "github", href: "https://github.com/phucnnh21/", color: "#f0f6fc" },
     {
-        name: "facebook",
-        href: "https://www.facebook.com/bapngo.13401/",
-        color: "#4267B2",
-    },
-    {
         name: "youtube",
         href: "https://www.youtube.com/channel/UCqQZmkjMiNYhqgg1h6cDrPw",
         color: "#FF0000",
