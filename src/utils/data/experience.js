@@ -16,7 +16,7 @@ const experience = [
     },
     {
         name: "DXT Technology",
-        img: "/img/experience/DXT.jpg",
+        img: "/img/experience/dxt.jpg",
         time: "08/2022 - Now",
         description: "JUNIOR FULL-STACK DEVELOPER",
     },
