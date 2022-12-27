@@ -9,7 +9,7 @@ const Profile = ({ setActivePage }) => {
             <h4 className="heading-4 opacity-55 py-2">
                 こんにちは 👋! Welcome to my website!
             </h4>
-            <p className="py-2">
+            <p className="pt-2">
                 This is my personal profile website. You can find out about my{" "}
                 <a href="#profile" onClick={() => setActivePage("Profile")}>
                     Profile
@@ -31,6 +31,28 @@ const Profile = ({ setActivePage }) => {
                 </a>
                 !
             </p>
+            {/* <p className="">
+                このウェブページは僕の履歴書です。 僕の
+                <a href="#profile" onClick={() => setActivePage("Profile")}>
+                    基本情報欄
+                </a>
+                、
+                <a href="#skills" onClick={() => setActivePage("Skills")}>
+                    スキル
+                </a>
+                、
+                <a href="#projects" onClick={() => setActivePage("Projects")}>
+                    プロジェクト
+                </a>
+                、
+                <a
+                    href="#experience"
+                    onClick={() => setActivePage("Experience")}
+                >
+                    学歴、職歴欄
+                </a>
+                について知ることができます!
+            </p> */}
         </section>
     );
 };

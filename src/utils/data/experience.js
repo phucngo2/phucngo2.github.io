@@ -2,7 +2,7 @@ const education = [
     {
         name: "FPT University",
         img: "/img/experience/FPT_University.png",
-        time: "09/2019 - 2023",
+        time: "09/2019 - 12/2022",
         description: "BACHELOR DEGREE",
     },
 ];
@@ -14,12 +14,12 @@ const experience = [
         time: "09/2021 - 12/2021",
         description: "INTERNSHIP",
     },
-    {
-        name: "DXT Technology",
-        img: "/img/experience/dxt.jpg",
-        time: "08/2022 - Now",
-        description: "JUNIOR FULL-STACK DEVELOPER",
-    },
+    // {
+    //     name: "DXT Technology",
+    //     img: "/img/experience/dxt.jpg",
+    //     time: "08/2022 - Now",
+    //     description: "JUNIOR FULL-STACK DEVELOPER",
+    // },
 ];
 
 export const experienceData = [
