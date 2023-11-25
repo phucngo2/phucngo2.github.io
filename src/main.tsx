@@ -1,10 +1,10 @@
-import React from "react";
+import { MantineTheme } from "config";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  <MantineTheme>
     <App />
-  </React.StrictMode>
+  </MantineTheme>
 );

@@ -1,7 +1,9 @@
+import "@mantine/core/styles.css";
 import "./App.css";
+import { Layout } from "shared/components";
 
 function App() {
-  return <div className="text-red-100">Hello Sekai</div>;
+  return <Layout />;
 }
 
 export default App;
