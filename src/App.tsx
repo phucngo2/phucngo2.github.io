@@ -3,7 +3,11 @@ import "./App.css";
 import { Layout } from "shared/components";
 
 function App() {
-  return <Layout />;
+  return (
+    <Layout>
+      <div></div>
+    </Layout>
+  );
 }
 
 export default App;

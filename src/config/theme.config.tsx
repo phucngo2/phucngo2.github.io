@@ -2,6 +2,7 @@ import { MantineProvider, createTheme } from "@mantine/core";
 
 const theme = createTheme({
   /** Put your mantine theme override here */
+  fontFamily: "Livvic",
 });
 
 interface MantineThemeProps {

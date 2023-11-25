@@ -1,8 +1,12 @@
 import { AppShell } from "@mantine/core";
-import { FloatingButton } from "shared/components";
+import { FloatingButton, Navbar } from "shared/components";
 import { useNavbarToggleStore } from "shared/stores";
 
-export const Layout = () => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const { isOpened } = useNavbarToggleStore();
 
   return (
@@ -14,10 +18,10 @@ export const Layout = () => {
       }}
       padding="md"
     >
-      <AppShell.Navbar p="md" bg="dark">
-        Navbar
+      <AppShell.Navbar p="lg" bg="dark">
+        <Navbar />
       </AppShell.Navbar>
-      <AppShell.Main bg="gray.1">Main</AppShell.Main>
+      <AppShell.Main bg="gray.1">{children}</AppShell.Main>
       <FloatingButton />
     </AppShell>
   );
