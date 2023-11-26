@@ -1,24 +1,49 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons/faDiscord";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
+import {
+  IconDefinition,
+  faBook,
+  faClockRotateLeft,
+  faTasks,
+  faUser,
+  faWrench,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  CERTIFICATION_ROUTE,
+  EXPERIENCE_ROUTE,
+  HOME_ROUTE,
+  PROJECTS_ROUTE,
+  SKILLS_ROUTE,
+} from "./routes.config";
 
-export const navbarFooter = [
+export interface NavbarPageItem {
+  name: string;
+  path: string;
+  icon: IconDefinition;
+}
+
+export const pageList = [
   {
-    name: "github",
-    icon: faGithub,
-    href: "https://github.com/phucnnh21/",
-    color: "#f0f6fc",
+    name: "Profile",
+    path: HOME_ROUTE,
+    icon: faUser,
   },
   {
-    name: "youtube",
-    icon: faYoutube,
-    href: "https://www.youtube.com/@NgoBap",
-    color: "#FF0000",
+    name: "Experience",
+    path: EXPERIENCE_ROUTE,
+    icon: faClockRotateLeft,
   },
   {
-    name: "discord",
-    icon: faDiscord,
-    href: "https://discord.gg/DrK6SsdNBv",
-    color: "#5865F2",
+    name: "Skills",
+    path: SKILLS_ROUTE,
+    icon: faWrench,
+  },
+  {
+    name: "Projects",
+    path: PROJECTS_ROUTE,
+    icon: faTasks,
+  },
+  {
+    name: "Certification",
+    path: CERTIFICATION_ROUTE,
+    icon: faBook,
   },
 ];

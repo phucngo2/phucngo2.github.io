@@ -1,13 +1,9 @@
 import "@mantine/core/styles.css";
+import { AppRoutes } from "config";
 import "./App.css";
-import { Layout } from "shared/components";
 
 function App() {
-  return (
-    <Layout>
-      <div></div>
-    </Layout>
-  );
+  return <AppRoutes />;
 }
 
 export default App;

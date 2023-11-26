@@ -1,7 +1,7 @@
-import { Affix, Burger, Button } from "@mantine/core";
+import { Affix, Burger } from "@mantine/core";
 import { useNavbarToggleStore } from "shared/stores";
 
-export const FloatingButton = () => {
+export const AppFloatingButton = () => {
   const { isOpened, toggleNavbar } = useNavbarToggleStore();
   return (
     <Affix position={{ bottom: 30, right: 30 }}>
