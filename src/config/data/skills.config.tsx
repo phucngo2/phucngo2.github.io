@@ -1,3 +1,14 @@
+export interface SkillIcon {
+  name: string;
+  src: string;
+  href: string;
+}
+
+export interface SkillRender {
+  title: string;
+  list: SkillIcon[];
+}
+
 const programingLanguages = [
   {
     name: "JavaScript",
@@ -140,7 +151,7 @@ const others = [
   // },
 ];
 
-export const skilsRender = [
+export const skillsRender: SkillRender[] = [
   {
     title: "Programming Languages",
     list: programingLanguages,
