@@ -1,5 +1,7 @@
+import { SkillsContainer } from "modules/skills/components";
+
 const Skills = () => {
-  return <div>Skills</div>;
+  return <SkillsContainer />;
 };
 
 export default Skills;

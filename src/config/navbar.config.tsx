@@ -32,7 +32,7 @@ export const pageList = [
     icon: faClockRotateLeft,
   },
   {
-    name: "Skills",
+    name: "Technical Skills",
     path: SKILLS_ROUTE,
     icon: faWrench,
   },
