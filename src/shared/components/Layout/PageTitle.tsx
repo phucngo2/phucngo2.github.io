@@ -1,6 +1,6 @@
 import { Title as MantineTitle } from "@mantine/core";
+import { NavbarControlButton } from "shared/components";
 import { useCurrentPageConfig } from "shared/hooks";
-import { NavbarControlButton } from ".";
 
 interface TitleProps {
   title?: React.ReactNode;

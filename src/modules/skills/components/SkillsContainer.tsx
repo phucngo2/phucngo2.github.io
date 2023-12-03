@@ -1,6 +1,6 @@
 import { skillsRender } from "config";
+import { SkillsGroup } from "modules/skills/components";
 import { PageContainer, PageTitle } from "shared/components";
-import { SkillsGroup } from ".";
 
 export const SkillsContainer = () => {
   return (

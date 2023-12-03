@@ -1,5 +1,5 @@
 import { Affix } from "@mantine/core";
-import { NavbarControlButton } from ".";
+import { NavbarControlButton } from "shared/components";
 
 export const AppFloatingButton = () => {
   return (

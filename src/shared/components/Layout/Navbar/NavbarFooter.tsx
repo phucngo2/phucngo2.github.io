@@ -1,5 +1,5 @@
 import { contacts } from "config";
-import { NavbarFooterItem } from ".";
+import { NavbarFooterItem } from "shared/components";
 
 export const NavbarFooter = () => {
   return (

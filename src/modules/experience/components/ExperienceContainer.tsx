@@ -1,5 +1,5 @@
+import { ExperienceTimeline } from "modules/experience/components";
 import { PageContainer, PageTitle } from "shared/components";
-import { ExperienceTimeline } from ".";
 
 export const ExperienceContainer = () => {
   return (

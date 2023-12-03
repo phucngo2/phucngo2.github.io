@@ -1,6 +1,6 @@
 import { Avatar } from "@mantine/core";
-import { NavbarFooter, NavbarItem } from ".";
 import { pageList } from "config/navbar.config";
+import { NavbarFooter, NavbarItem } from "shared/components";
 
 export const Navbar = () => {
   return (

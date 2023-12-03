@@ -1,6 +1,6 @@
 import { pageList } from "config";
 import { useMemo } from "react";
-import { useRouter } from ".";
+import { useRouter } from "shared/hooks";
 
 export const useCurrentPageConfig = () => {
   const { location } = useRouter();

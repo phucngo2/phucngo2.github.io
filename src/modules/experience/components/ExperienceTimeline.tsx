@@ -1,7 +1,7 @@
 import { Timeline } from "@mantine/core";
 import { experienceData } from "config";
+import { ExperienceTimelineItem } from "modules/experience/components";
 import { useMemo } from "react";
-import { ExperienceTimelineItem } from ".";
 
 export const ExperienceTimeline = () => {
   const reversedExperienceData = useMemo(

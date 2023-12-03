@@ -36,25 +36,26 @@ export const AppLayout: React.FC<LayoutProps> = () => {
         <Navbar />
       </AppShell.Navbar>
       <AppShell.Main
+        className="flex w-full h-full"
         bg={backgroundColor}
         pt="var(--app-shell-header-offset, 0px)"
         pb="var(--app-shell-footer-offset, 0px)"
         pl="var(--app-shell-navbar-offset, 0px)"
         pr="var(--app-shell-aside-offset, 0px)"
       >
-        <ScrollArea>
-          <Box
-            px={12}
-            py={{
-              base: 24,
-              sm: 32,
-            }}
-          >
-            <Suspense>
+        <Suspense>
+          <ScrollArea offsetScrollbars className="w-full">
+            <Box
+              px={12}
+              py={{
+                base: 24,
+                sm: 32,
+              }}
+            >
               <Outlet />
-            </Suspense>
-          </Box>
-        </ScrollArea>
+            </Box>
+          </ScrollArea>
+        </Suspense>
       </AppShell.Main>
       {/* <AppFloatingButton /> */}
     </AppShell>
