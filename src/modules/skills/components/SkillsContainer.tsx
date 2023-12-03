@@ -6,7 +6,7 @@ export const SkillsContainer = () => {
   return (
     <PageContainer>
       <PageTitle />
-      <div className="flex flex-col flex-1 w-full gap-8">
+      <div className="flex flex-col w-full gap-8">
         {skillsRender.map((item) => (
           <SkillsGroup key={item.title} skillGroupConfig={item} />
         ))}

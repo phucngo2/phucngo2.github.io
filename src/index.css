@@ -12,3 +12,11 @@
 
   --app-shell-navbar-width: 260px !important;
 }
+
+li {
+  display: flex;
+}
+li::before {
+  content: " ";
+  display: list-item;
+}

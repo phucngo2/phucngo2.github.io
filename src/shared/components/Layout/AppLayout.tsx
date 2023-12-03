@@ -1,4 +1,4 @@
-import { AppShell } from "@mantine/core";
+import { AppShell, Box, ScrollArea } from "@mantine/core";
 import { useClickOutside } from "@mantine/hooks";
 import { backgroundColor } from "config";
 import { Outlet } from "react-router-dom";
@@ -29,6 +29,7 @@ export const AppLayout: React.FC<LayoutProps> = () => {
         base: "md",
         sm: "xl",
       }}
+      className="app-layout"
       {...props}
     >
       <AppShell.Navbar p="lg" bg="dark.6" ref={navbarRef}>
@@ -36,11 +37,24 @@ export const AppLayout: React.FC<LayoutProps> = () => {
       </AppShell.Navbar>
       <AppShell.Main
         bg={backgroundColor}
-        className="flex flex-col w-full h-full"
+        pt="var(--app-shell-header-offset, 0px)"
+        pb="var(--app-shell-footer-offset, 0px)"
+        pl="var(--app-shell-navbar-offset, 0px)"
+        pr="var(--app-shell-aside-offset, 0px)"
       >
-        <Suspense>
-          <Outlet />
-        </Suspense>
+        <ScrollArea>
+          <Box
+            px={12}
+            py={{
+              base: 24,
+              sm: 32,
+            }}
+          >
+            <Suspense>
+              <Outlet />
+            </Suspense>
+          </Box>
+        </ScrollArea>
       </AppShell.Main>
       {/* <AppFloatingButton /> */}
     </AppShell>

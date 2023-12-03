@@ -1,5 +1,7 @@
+import { IntroductionContainer } from "modules/introduction/components";
+
 export const Introduction = () => {
-  return <div>Introduction</div>;
+  return <IntroductionContainer />;
 };
 
 export default Introduction;

@@ -1,2 +1,3 @@
-export * from "./contact.config";
-export * from "./skills.config";
+export * from "./contact.data";
+export * from "./skills.data";
+export * from "./experience.data";

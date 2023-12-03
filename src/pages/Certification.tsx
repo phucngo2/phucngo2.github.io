@@ -1,5 +1,7 @@
+import { CertificationContainer } from "modules/certification/components";
+
 const Certification = () => {
-  return <div>Certification</div>;
+  return <CertificationContainer />;
 };
 
 export default Certification;

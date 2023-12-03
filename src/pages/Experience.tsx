@@ -1,5 +1,7 @@
+import { ExperienceContainer } from "modules/experience/components";
+
 const Experience = () => {
-  return <div>Experience</div>;
+  return <ExperienceContainer />;
 };
 
 export default Experience;
