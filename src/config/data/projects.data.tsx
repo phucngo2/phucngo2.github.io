@@ -3,6 +3,7 @@ import Draplus from "assets/projects/draplus.jpeg";
 import YoutubeStalker from "assets/projects/youtubestalker.png";
 import HocSu from "assets/projects/hocsu.png";
 import Avis from "assets/projects/avis.png";
+import { List } from "@mantine/core";
 
 export interface ProjectItemBadge {
   title: string;
@@ -38,6 +39,10 @@ const FastApiBadge: ProjectItemBadge = {
   title: "FastAPI",
   color: "teal",
 };
+const MachineLearningBadge: ProjectItemBadge = {
+  title: "Machine Learning",
+  color: "dark",
+};
 
 export const projectsData: ProjectItem[] = [
   {
@@ -62,8 +67,14 @@ export const projectsData: ProjectItem[] = [
     id: 3,
     name: "YouTube Downloader",
     img: YoutubeStalker,
-    description:
-      "A desktop app that allows users to download videos from YouTube and use FFmpeg to convert video",
+    description: (
+      <List>
+        <List.Item>
+          A desktop app that allows users to download videos from YouTube
+        </List.Item>
+        <List.Item>Implemented FFmpeg for video and audio processing</List.Item>
+      </List>
+    ),
     url: "https://github.com/phucnnh21/electron-youtube-downloader/releases",
     technicalStack: [ReactBadge, ElectronBadge],
   },
@@ -83,6 +94,11 @@ export const projectsData: ProjectItem[] = [
     description:
       "College capstone project: Machine learning implementation to search for songs by humming",
     url: "https://avisapp.netlify.app/",
-    technicalStack: [ReactBadge, DotNetBadge, FastApiBadge],
+    technicalStack: [
+      ReactBadge,
+      DotNetBadge,
+      FastApiBadge,
+      MachineLearningBadge,
+    ],
   },
 ];

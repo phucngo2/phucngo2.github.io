@@ -7,7 +7,7 @@ import {
   faWrench,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  CERTIFICATION_ROUTE,
+  CERTIFICATION_ROUTES,
   EXPERIENCE_ROUTE,
   HOME_ROUTE,
   PROJECTS_ROUTE,
@@ -42,8 +42,8 @@ export const pageList = [
     icon: faTasks,
   },
   {
-    name: "Certification",
-    path: CERTIFICATION_ROUTE,
+    name: "Certifications",
+    path: CERTIFICATION_ROUTES,
     icon: faBook,
   },
 ];

@@ -4,14 +4,14 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import { AppLayout } from "shared/components/Layout/AppLayout";
 import {
-  CERTIFICATION_ROUTE,
+  CERTIFICATION_ROUTES,
   EXPERIENCE_ROUTE,
   HOME_ROUTE,
   PROJECTS_ROUTE,
   SKILLS_ROUTE,
 } from "./routes.config";
+import AppLayout from "shared/components/Layout/AppLayout";
 const Introduction = React.lazy(() => import("pages/Introduction"));
 const Experience = React.lazy(() => import("pages/Experience"));
 const Skills = React.lazy(() => import("pages/Skills"));
@@ -39,7 +39,7 @@ const appRouter = createBrowserRouter([
         element: <Projects />,
       },
       {
-        path: CERTIFICATION_ROUTE,
+        path: CERTIFICATION_ROUTES,
         element: <Certification />,
       },
     ],

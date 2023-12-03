@@ -25,7 +25,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
       <Box c="dimmed" size="sm" className="mt-1 mb-4 text-justify">
         {item.description}
       </Box>
-      <Box mt="auto" c="dimmed" className="flex flex-row gap-2">
+      <Box mt="auto" c="dimmed" className="flex flex-row flex-wrap gap-2">
         {item.technicalStack.map((badge) => (
           <ProjectBadge key={item.id + badge.title} badge={badge} />
         ))}

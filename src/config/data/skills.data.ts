@@ -11,14 +11,14 @@ export interface SkillRender {
 
 const programingLanguages = [
   {
-    name: "JavaScript",
-    src: "javascript/javascript-original.svg",
-    href: "https://www.javascript.com/",
-  },
-  {
     name: "TypeScript",
     src: "typescript/typescript-original.svg",
     href: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "JavaScript",
+    src: "javascript/javascript-original.svg",
+    href: "https://www.javascript.com/",
   },
   {
     name: "C HashTag",
@@ -105,6 +105,11 @@ const databases = [
     name: "MySQL",
     src: "mysql/mysql-original.svg",
     href: "https://www.mysql.com/",
+  },
+  {
+    name: "Redis",
+    src: "redis/redis-original.svg",
+    href: "https://redis.io/",
   },
 ];
 

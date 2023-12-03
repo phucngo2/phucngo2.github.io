@@ -8,7 +8,7 @@ import { useNavbarToggleStore } from "shared/stores";
 
 interface LayoutProps {}
 
-export const AppLayout: React.FC<LayoutProps> = () => {
+const AppLayout: React.FC<LayoutProps> = () => {
   const { isOpened, closeNavbar, openNavbar } = useNavbarToggleStore();
   const navbarRef = useClickOutside(() => closeNavbar());
   const props = useSwipe({
@@ -61,3 +61,5 @@ export const AppLayout: React.FC<LayoutProps> = () => {
     </AppShell>
   );
 };
+
+export default AppLayout;
