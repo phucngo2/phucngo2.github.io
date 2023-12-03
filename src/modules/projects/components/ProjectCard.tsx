@@ -1,30 +1,35 @@
-import { Card, Image, Text } from "@mantine/core";
+import { Box, Card, Image, Text } from "@mantine/core";
+import { ProjectItem } from "config";
+import { ProjectBadge } from "./ProjectBadge";
 
-export const ProjectCard = () => {
+interface ProjectCardProps {
+  item: ProjectItem;
+}
+
+export const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
   return (
     <Card
       shadow="sm"
-      padding="xl"
+      padding="lg"
       component="a"
-      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      href={item.url}
       target="_blank"
+      rel="noreferrer"
     >
       <Card.Section>
-        <Image
-          src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-          h={160}
-          alt="No way!"
-        />
+        <Image src={item.img} h={160} alt={item.name} fit="cover" />
       </Card.Section>
-
-      <Text fw={500} size="lg" mt="md">
-        You&apos;ve won a million dollars in cash!
+      <Text size="lg" className="font-semibold mt-[14px]">
+        {item.name}
       </Text>
-
-      <Text mt="xs" c="dimmed" size="sm">
-        Please click anywhere on this card to claim your reward, this is not a
-        fraud, trust us
-      </Text>
+      <Box c="dimmed" size="sm" className="mt-1 mb-4 text-justify">
+        {item.description}
+      </Box>
+      <Box mt="auto" c="dimmed" className="flex flex-row gap-2">
+        {item.technicalStack.map((badge) => (
+          <ProjectBadge key={item.id + badge.title} badge={badge} />
+        ))}
+      </Box>
     </Card>
   );
 };

@@ -4,50 +4,85 @@ import YoutubeStalker from "assets/projects/youtubestalker.png";
 import HocSu from "assets/projects/hocsu.png";
 import Avis from "assets/projects/avis.png";
 
+export interface ProjectItemBadge {
+  title: string;
+  color: string;
+}
+
 export interface ProjectItem {
   id: number;
   name: string;
   img: string;
   description: React.ReactNode;
   url: string;
+  technicalStack: ProjectItemBadge[];
 }
+
+const ReactBadge: ProjectItemBadge = {
+  title: "React",
+  color: "blue",
+};
+const DotNetBadge: ProjectItemBadge = {
+  title: "DotNet",
+  color: "grape",
+};
+const ElectronBadge: ProjectItemBadge = {
+  title: "Electron",
+  color: "gray",
+};
+const FireBaseBadge: ProjectItemBadge = {
+  title: "Firebase",
+  color: "yellow",
+};
+const FastApiBadge: ProjectItemBadge = {
+  title: "FastAPI",
+  color: "teal",
+};
 
 export const projectsData: ProjectItem[] = [
   {
     id: 1,
     name: "Dược Thiên Lộc Việt",
     img: DuocThienLocViet,
-    description: "Duoc Thien Loc Viet. A pharmacy e-commerce website.",
+    description:
+      "An e-commerce website to assist a pharmacy store during COVID-19",
     url: "https://duocthienlocviet.com",
+    technicalStack: [ReactBadge, DotNetBadge],
   },
   {
     id: 2,
     name: "Draplus",
     img: Draplus,
-    description: "Draplus. A real-time drawing web application.",
+    description:
+      "A real-time drawing web application, where people can concurrently sketch and share ideas",
     url: "https://draplus.netlify.app/",
+    technicalStack: [ReactBadge, DotNetBadge],
   },
   {
     id: 3,
-    name: "Youtube Stalker",
+    name: "YouTube Downloader",
     img: YoutubeStalker,
     description:
-      "Youtube Stalker. An electron app that allow user to convert and download video from Youtube.",
+      "A desktop app that allows users to download videos from YouTube and use FFmpeg to convert video",
     url: "https://github.com/phucnnh21/electron-youtube-downloader/releases",
+    technicalStack: [ReactBadge, ElectronBadge],
   },
   {
     id: 4,
     name: "Học Sử",
     img: HocSu,
-    description: "Hoc Su. A history learning website for Vietnamese teachers.",
+    description:
+      "A history learning website that assists Vietnamese educators in their teaching",
     url: "https://hocsu.netlify.app/",
+    technicalStack: [ReactBadge, FireBaseBadge],
   },
   {
     id: 5,
     name: "Avis",
     img: Avis,
     description:
-      "Avis. Machine learning implementation to search for songs by humming.",
+      "College capstone project: Machine learning implementation to search for songs by humming",
     url: "https://avisapp.netlify.app/",
+    technicalStack: [ReactBadge, DotNetBadge, FastApiBadge],
   },
 ];

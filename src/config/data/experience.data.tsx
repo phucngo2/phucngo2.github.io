@@ -14,7 +14,7 @@ export const experienceData: ExperienceItem[] = [
     id: 1,
     name: "FPT University Can Tho",
     time: "September 2019 - December 2022",
-    role: "Bachelor Degree",
+    role: "Bachelor of Software Engineering",
     src: "https://cantho.fpt.edu.vn/",
   },
   {

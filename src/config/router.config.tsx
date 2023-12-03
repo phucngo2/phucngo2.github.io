@@ -4,7 +4,7 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import { AppLayout } from "shared/components";
+import { AppLayout } from "shared/components/Layout/AppLayout";
 import {
   CERTIFICATION_ROUTE,
   EXPERIENCE_ROUTE,

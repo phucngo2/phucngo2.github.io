@@ -32,7 +32,7 @@ export const contacts = [
     color: "#f2a60c",
   },
   {
-    name: "Youtube",
+    name: "YouTube",
     icon: faYoutube,
     href: "https://www.youtube.com/@NgoBap",
     color: "#FF0000",
