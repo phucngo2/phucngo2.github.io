@@ -12,7 +12,7 @@ export const SkillsGroup: React.FC<SkillsGroupProps> = ({
 }) => {
   return (
     <div>
-      <Title order={5} className="mb-4">
+      <Title order={4} className="mb-4">
         {skillGroupConfig.title}
       </Title>
       <div className="flex flex-row flex-wrap justify-between gap-5 sm:justify-start sm:gap-8">

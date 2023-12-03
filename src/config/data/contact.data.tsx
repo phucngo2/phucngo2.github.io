@@ -29,7 +29,7 @@ export const contacts = [
     name: "Gmail",
     icon: faEnvelope,
     href: "https://github.com/phucnnh21/",
-    color: "#f2a60c",
+    color: "#08851b",
   },
   {
     name: "YouTube",
