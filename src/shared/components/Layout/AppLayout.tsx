@@ -46,10 +46,13 @@ const AppLayout: React.FC<LayoutProps> = () => {
         <Suspense>
           <ScrollArea offsetScrollbars className="w-full">
             <Box
-              px={12}
+              px={{
+                base: 12,
+                sm: 56,
+              }}
               py={{
                 base: 24,
-                sm: 32,
+                sm: 40,
               }}
             >
               <Outlet />

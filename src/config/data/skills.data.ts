@@ -49,12 +49,12 @@ const programingLanguages = [
 
 const librariesAndFramworks = [
   {
-    name: "ReactJS",
+    name: "React",
     src: "react/react-original.svg",
     href: "https://reactjs.org/",
   },
   {
-    name: "ExpressJS",
+    name: "Express",
     src: "express/express-original.svg",
     href: "https://expressjs.com/",
   },

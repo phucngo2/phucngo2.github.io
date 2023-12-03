@@ -14,7 +14,7 @@ export const PageContainer: React.FC<PageContainer> = ({
     <Container
       fluid
       className={twClassNames(
-        "flex flex-col items-start flex-1 w-full gap-6 sm:px-20",
+        "flex flex-col items-start flex-1 w-full gap-6",
         className ?? ""
       )}
     >

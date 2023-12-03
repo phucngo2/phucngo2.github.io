@@ -1,5 +1,5 @@
 import { Avatar } from "@mantine/core";
-import ProfileAvatar from "assets/cat.jpg";
+import ProfileAvatar from "assets/profile/cat.jpg";
 import { AVATAR_SIZE } from "config";
 import { pageList } from "config/navbar.config";
 import { NavbarFooter, NavbarItem } from "shared/components";

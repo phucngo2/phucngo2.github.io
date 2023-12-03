@@ -25,7 +25,7 @@ export const experienceData: ExperienceItem[] = [
     src: "https://fptsoftware.com/",
     description: (
       <List>
-        <List.Item mt={6}>
+        <List.Item mt={8}>
           Developed an interactive user interface using React to build an
           Internship Trainee Management System
         </List.Item>
@@ -56,7 +56,7 @@ export const experienceData: ExperienceItem[] = [
     src: "https://www.ptnglobalcorp.com/",
     description: (
       <List>
-        <List.Item mt={6}>
+        <List.Item mt={8}>
           Collaborated closely with team members to implement various features,
           ensuring the continuous maintenance and enhancement of software
           applications
