@@ -1,6 +1,9 @@
 import React from "react";
-import { Navigate, RouterProvider, createHashRouter } from "react-router-dom";
-import AppLayout from "shared/components/Layout/AppLayout";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import {
   CERTIFICATION_ROUTES,
   EXPERIENCE_ROUTE,
@@ -8,13 +11,14 @@ import {
   PROJECTS_ROUTE,
   SKILLS_ROUTE,
 } from "./routes.config";
+import AppLayout from "shared/components/Layout/AppLayout";
 const Introduction = React.lazy(() => import("pages/Introduction"));
 const Experience = React.lazy(() => import("pages/Experience"));
 const Skills = React.lazy(() => import("pages/Skills"));
 const Projects = React.lazy(() => import("pages/Projects"));
 const Certification = React.lazy(() => import("pages/Certification"));
 
-const appRouter = createHashRouter([
+const appRouter = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
