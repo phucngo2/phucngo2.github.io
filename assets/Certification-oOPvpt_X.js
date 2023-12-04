@@ -1,0 +1,1 @@
+import{j as t,C as a}from"./index-mjM5vJle.js";import{P as e,a as i}from"./PageTitle-YYdSy4iE.js";const r=()=>t.jsxs(e,{className:"gap-8",children:[t.jsx(i,{}),t.jsx(a,{})]}),o=()=>t.jsx(r,{});export{o as default};

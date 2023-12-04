@@ -1,0 +1,1 @@
+import{j as t,I as n}from"./index-mjM5vJle.js";import{P as o,a as r}from"./PageTitle-YYdSy4iE.js";const s=()=>t.jsxs(o,{className:"gap-8",children:[t.jsx(r,{title:"Phúc Ngô"}),t.jsx(n,{})]}),i=()=>t.jsx(s,{});export{i as Introduction,i as default};
