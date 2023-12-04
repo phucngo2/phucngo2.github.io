@@ -6,7 +6,7 @@ export const CertificationContainer = () => {
   return (
     <PageContainer className="gap-8">
       <PageTitle />
-      <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-3">
         {certificationData.map((item) => (
           <CertificationCard key={item.name} item={item} />
         ))}
