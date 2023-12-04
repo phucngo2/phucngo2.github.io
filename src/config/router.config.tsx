@@ -1,17 +1,19 @@
+import Paper from "pages/Paper";
 import React from "react";
 import {
   Navigate,
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
+import AppLayout from "shared/components/Layout/AppLayout";
 import {
-  CERTIFICATION_ROUTES,
+  CERTIFICATION_ROUTE,
   EXPERIENCE_ROUTE,
   HOME_ROUTE,
+  PAPER_ROUTE,
   PROJECTS_ROUTE,
   SKILLS_ROUTE,
 } from "./routes.config";
-import AppLayout from "shared/components/Layout/AppLayout";
 const Introduction = React.lazy(() => import("pages/Introduction"));
 const Experience = React.lazy(() => import("pages/Experience"));
 const Skills = React.lazy(() => import("pages/Skills"));
@@ -39,10 +41,14 @@ const appRouter = createBrowserRouter([
         element: <Projects />,
       },
       {
-        path: CERTIFICATION_ROUTES,
+        path: CERTIFICATION_ROUTE,
         element: <Certification />,
       },
     ],
+  },
+  {
+    path: PAPER_ROUTE,
+    element: <Paper />,
   },
   {
     path: "*",
