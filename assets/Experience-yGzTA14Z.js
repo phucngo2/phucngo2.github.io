@@ -1,1 +1,0 @@
-import{j as e,E as s}from"./index-mjM5vJle.js";import{P as a,a as r}from"./PageTitle-YYdSy4iE.js";const n=()=>e.jsxs(a,{className:"gap-8",children:[e.jsx(r,{}),e.jsx("div",{className:"flex flex-col w-full gap-8",children:e.jsx(s,{})})]}),x=()=>e.jsx(n,{});export{x as default};
