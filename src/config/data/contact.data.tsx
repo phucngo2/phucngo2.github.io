@@ -22,7 +22,7 @@ export const contacts = [
   {
     name: "GitHub",
     icon: faGithub,
-    href: "https://github.com/phucnnh21/",
+    href: "https://github.com/phucngo2/",
     color: "#f0f6fc",
   },
   {
