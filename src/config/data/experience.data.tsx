@@ -26,8 +26,11 @@ export const experienceData: ExperienceItem[] = [
     description: (
       <List>
         <List.Item mt={8}>
-          Developed an interactive user interface using React to build an
-          Internship Trainee Management System
+          <span className="font-semibold">Business domain:</span> Education
+        </List.Item>
+        <List.Item>
+          Developed a user-friendly interface with React for an Internship
+          Trainee Management System.
         </List.Item>
         <List.Item>Trained in React, DotNet, RESTful API</List.Item>
       </List>
@@ -57,6 +60,10 @@ export const experienceData: ExperienceItem[] = [
     description: (
       <List>
         <List.Item mt={8}>
+          <span className="font-semibold">Business domain:</span> Interpreting
+          and Language Services
+        </List.Item>
+        <List.Item>
           Collaborated closely with team members to implement various features,
           ensuring the continuous maintenance and enhancement of software
           applications
