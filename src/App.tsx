@@ -1,13 +1,12 @@
+import { Layout } from "@/components/Layout";
 import { Button } from "@heroui/react";
 import "./App.css";
 
 function App() {
   return (
-    <div className="flex gap-4 items-center">
-      <Button size="sm">Small</Button>
-      <Button size="md">Medium</Button>
-      <Button size="lg">Large</Button>
-    </div>
+    <Layout>
+      <Button color="primary">Hello Sekai!</Button>
+    </Layout>
   );
 }
 
