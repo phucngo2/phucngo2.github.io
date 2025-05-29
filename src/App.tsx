@@ -1,11 +1,11 @@
-import { Layout } from "@/components/Layout";
-import { Button } from "@heroui/react";
+import { Layout } from "@/components";
 import "./App.css";
+import { Introduction } from "@/modules/introduction";
 
 function App() {
   return (
     <Layout>
-      <Button color="primary">Hello Sekai!</Button>
+      <Introduction />
     </Layout>
   );
 }
