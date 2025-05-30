@@ -87,7 +87,7 @@ export default heroui({
           foreground: "#000",
           DEFAULT: "#f31260",
         },
-        background: "#181818",
+        background: "#ffffff",
         foreground: "#000000",
         content1: {
           DEFAULT: "#ffffff",
@@ -195,7 +195,7 @@ export default heroui({
           foreground: "#000",
           DEFAULT: "#f31260",
         },
-        background: "#181818",
+        background: "#191919",
         foreground: "#ffffff",
         content1: {
           DEFAULT: "#18181b",

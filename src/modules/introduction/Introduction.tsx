@@ -24,7 +24,7 @@ export const Introduction = () => {
 
       <Typography>Enjoy exploring! 🚀</Typography>
 
-      <Image src={MinatoAquaGif} className="w-96" />
+      <Image src={MinatoAquaGif} className="w-96" isZoomed />
 
       <Typography>「日本語は難しいですが、面白いです！」 🤡</Typography>
     </Section>
