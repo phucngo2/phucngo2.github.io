@@ -29,7 +29,7 @@ export const SkillsGroup: React.FC<SkillsGroupProps> = ({
         ))
       ) : (
         <Card className="w-full bg-content2">
-          <CardBody className="flex flex-row items-center gap-4">
+          <CardBody className="flex flex-row items-center justify-evenly sm:justify-start flex-wrap gap-4">
             {item.list?.map((skill) => (
               <SkillsIcon key={skill.name} item={skill} />
             ))}
