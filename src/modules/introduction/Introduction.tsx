@@ -3,11 +3,16 @@ import { Section } from "@/components";
 import { Typography } from "@/components/Typography";
 import { Sections } from "@/configs";
 import { Image, Link, Snippet } from "@heroui/react";
+import { IntroductionTitle } from "./IntroductionTitle";
 import { getIdHref } from "./utils";
 
 export const Introduction = () => {
   return (
-    <Section id={Sections.Introduction} title="Phúc Ngô" className="pt-0">
+    <Section
+      id={Sections.Introduction}
+      title={<IntroductionTitle />}
+      className="pt-0"
+    >
       <Typography>
         こんにちは！👋 Welcome to my personal profile website! 🌠
       </Typography>
