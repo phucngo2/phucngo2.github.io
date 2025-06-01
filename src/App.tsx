@@ -1,5 +1,11 @@
 import { Layout } from "@/components";
-import { Experience, Introduction, Projects, Skills } from "@/modules/";
+import {
+  Certification,
+  Experience,
+  Introduction,
+  Projects,
+  Skills,
+} from "@/modules/";
 
 import "./App.css";
 
@@ -13,6 +19,8 @@ function App() {
       <Skills />
 
       <Projects />
+
+      <Certification />
     </Layout>
   );
 }
