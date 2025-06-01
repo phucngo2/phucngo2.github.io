@@ -1,5 +1,6 @@
+import { Tooltip } from "@/components";
 import type { SkillIcon } from "@/configs/data";
-import { Image, Link, Tooltip } from "@heroui/react";
+import { Image, Link } from "@heroui/react";
 import { getSkillIconSrc } from "./utils";
 
 interface SkillsIconProps {
