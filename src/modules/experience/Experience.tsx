@@ -6,7 +6,7 @@ import { experienceData } from "@/configs/data/experience.data";
 export const Experience = () => {
   return (
     <Section id={Sections.Experience} title="Experience">
-      <Timeline items={experienceData} />
+      <Timeline items={experienceData} className="ml-1" />
     </Section>
   );
 };
