@@ -16,6 +16,7 @@ export const SkillsIcon: React.FC<SkillsIconProps> = ({ item }) => {
           alt={item.name}
           isZoomed
           width={60}
+          shadow="sm"
         />
       </Link>
     </Tooltip>

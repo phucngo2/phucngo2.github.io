@@ -25,7 +25,7 @@ export const Introduction = () => {
         something specific you're interested in, please feel free to reach out.
       </Typography>
       <Typography>Enjoy exploring! 🚀</Typography>
-      <Image src={MinatoAquaGif} className="w-96" isZoomed />
+      <Image src={MinatoAquaGif} className="w-96" isZoomed shadow="sm" />
       <div>
         <Typography>
           I also have a deep passion for Japanese culture 🎏

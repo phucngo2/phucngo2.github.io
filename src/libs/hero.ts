@@ -198,18 +198,14 @@ export default heroui({
         background: "#191919",
         foreground: "#ffffff",
         content1: {
-          DEFAULT: "#18181b",
-          foreground: "#fff",
-        },
-        content2: {
           DEFAULT: "#27272a",
           foreground: "#fff",
         },
-        content3: {
+        content2: {
           DEFAULT: "#3f3f46",
           foreground: "#fff",
         },
-        content4: {
+        content3: {
           DEFAULT: "#52525b",
           foreground: "#fff",
         },
