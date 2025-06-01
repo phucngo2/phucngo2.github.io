@@ -28,9 +28,9 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ item }) => {
           width="100%"
         />
       </CardBody>
-      <CardFooter className="flex-col items-start justify-start p-4 pt-0">
+      <CardFooter className="flex-col items-start justify-start p-4 pt-0  flex-1">
         <b className="font-bold">{item.name}</b>
-        <div className="text-default-700 text-justify mt-1">
+        <div className="text-default-700 text-justify mt-1 flex-1">
           {item.description}
         </div>
         <div className="mt-4 flex gap-3 flex-wrap">

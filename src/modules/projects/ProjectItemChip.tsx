@@ -7,7 +7,13 @@ interface ProjectItemChipProps {
 
 export const ProjectItemChip: React.FC<ProjectItemChipProps> = ({ item }) => {
   return (
-    <Chip className={cn("bg-gradient-to-br", item.color)} variant="shadow">
+    <Chip
+      classNames={{
+        base: cn("bg-gradient-to-br project-item-chip", item.color),
+        content: "text-white font-semibold",
+      }}
+      variant="shadow"
+    >
       {item.title}
     </Chip>
   );

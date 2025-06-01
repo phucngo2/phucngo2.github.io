@@ -86,8 +86,15 @@ export const projectsData: ProjectItem[] = [
     id: 6,
     name: "Subtitle Burner",
     img: SubtitleBurner,
-    description:
-      "🔥 A simple desktop application for burning (hardcoding) subtitles into video",
+    description: (
+      <ul>
+        <li>
+          🔥 A simple desktop application for burning (hardcoding) subtitles
+          into video
+        </li>
+        <li>Implemented FFmpeg for video and audio processing</li>
+      </ul>
+    ),
     url: "https://github.com/phucngo2/subtitle-burner/releases",
     technicalStack: [SolidjsBadge, TauriBadge],
   },
