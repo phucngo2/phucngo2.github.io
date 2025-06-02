@@ -88,8 +88,13 @@ const frontendFrameworks = [
 
 const backendFrameworks = [
   {
-    name: "DotNet",
+    name: "DotNet Core",
     src: "dotnetcore/dotnetcore-original.svg",
+    href: "https://dotnet.microsoft.com/",
+  },
+  {
+    name: "DotNet",
+    src: "dot-net/dot-net-original.svg",
     href: "https://dotnet.microsoft.com/",
   },
   {
