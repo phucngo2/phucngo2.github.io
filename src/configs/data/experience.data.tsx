@@ -15,25 +15,55 @@ export const experienceData: ExperienceItem[] = [
     role: "Software Engineer",
     src: "https://www.ptnglobalcorp.com/",
     description: (
-      <ul className="list-disc ms-3.5">
-        <li>
-          <span className="font-semibold">Business domain:</span> Interpreting
+      <div className="flex flex-col gap-1">
+        <div>
+          <span className="font-semibold">Business Domain:</span> Interpreting
           and Language Services, Finance, and Healthcare
-        </li>
-        <li>
-          Collaborated closely with team members to implement various features,
-          ensuring the continuous maintenance and enhancement of software
-          applications
-        </li>
-        <li>
-          Contributed to the development of key features, with a notable on
-          video rendering and subtitle editing functionality
-        </li>
-        <li>
-          Worked across diverse technologies, including React, React Native,
-          Vue.js, Angular, APS.NET, WPF, Wordpress, Sencha Ext JS
-        </li>
-      </ul>
+        </div>
+
+        <div>
+          <div className="font-semibold">
+            Key Responsibilities & Achievements:
+          </div>
+
+          <ul className="list-disc ms-3.5">
+            <li>
+              Developed multiple applications across multiple platforms,
+              including web, mobile, and desktop.
+            </li>
+            <li>
+              Designed and implemented responsive and modern UIs, achieving 90+
+              Google Lighthouse scores for performance, accessibility, and SEO.
+            </li>
+            <li>
+              Built scalable back-end services and RESTful APIs, enabling
+              seamless data exchange and supporting high concurrency usage with
+              improved system reliability.
+            </li>
+            <li>
+              Maintained clean, efficient, and maintainable codebases by
+              resolving defects, refactoring components, and optimizing
+              architecture, resulting in the reduction in production issues and
+              enhanced long-term stability.
+            </li>
+            <li>
+              Collaborated with cross-functional stakeholders to translate
+              business and regulatory requirements into technical solutions.
+            </li>
+            <li>
+              Supported team members through knowledge sharing, technical
+              guidance, and peer code reviews, improving code quality and
+              development consistency.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <span className="font-semibold">Technologies:</span> React, Next.js,
+          Node.js, DotNet, Vue.js, React Native, Wordpress, PostgreSQL, SQL
+          Server, Sencha Ext JS
+        </div>
+      </div>
     ),
   },
   // {
@@ -58,16 +88,19 @@ export const experienceData: ExperienceItem[] = [
     role: "Software Engineer Intern",
     src: "https://fptsoftware.com/",
     description: (
-      <ul className="list-disc ms-3.5">
-        <li>
-          <span className="font-semibold">Business domain:</span> Education
-        </li>
-        <li>
-          Developed a user-friendly interface with React for an Internship
-          Trainee Management System.
-        </li>
-        <li>Trained in React, DotNet, RESTful API</li>
-      </ul>
+      <div className="flex flex-col gap-1">
+        <div>
+          <span className="font-semibold">Business Domain:</span> Education
+        </div>
+
+        <ul className="list-disc ms-3.5">
+          <li>
+            Developed a user-friendly interface with React for an Internship
+            Trainee Management System.
+          </li>
+          <li>Trained in React, DotNet, RESTful API</li>
+        </ul>
+      </div>
     ),
   },
   {
