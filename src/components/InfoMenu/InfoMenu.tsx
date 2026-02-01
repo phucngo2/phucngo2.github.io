@@ -21,6 +21,7 @@ export const InfoMenu = () => {
     <div className="w-full sm:w-fit flex flex-row items-center justify-end gap-2">
       {contacts.map((item) => (
         <InfoMenuItem
+          key={item.id}
           tooltip={item.name}
           as={Link}
           href={item.href}
