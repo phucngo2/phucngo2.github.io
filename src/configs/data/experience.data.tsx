@@ -9,9 +9,69 @@ export interface ExperienceItem {
 
 export const experienceData: ExperienceItem[] = [
   {
+    id: 5,
+    title: "ONE Tech Stop Vietnam",
+    time: "May 2026 - Now",
+    role: "Software Developer",
+    src: "https://ots.one-line.com/vi",
+    description: (
+      <div className="flex flex-col gap-1">
+        <div>
+          <span className="font-semibold">Business Domain:</span> Container
+          Shipping
+        </div>
+
+        <div>
+          <div className="font-semibold">
+            Key Responsibilities & Achievements:
+          </div>
+
+          <ul className="list-disc ms-3.5">
+            <li>
+              Developed and maintained a design system and front-end component
+              library, providing reusable, consistent, and accessible UI
+              components across multiple applications.
+            </li>
+            <li>
+              Designed and implemented flexible component APIs, patterns, and
+              documentation to improve development efficiency, consistency, and
+              maintainability across products.
+            </li>
+            <li>
+              Built and maintained an MCP server and AI skill that enable
+              AI-assisted discovery, usage, and generation of design system
+              components and patterns, reducing development time across products
+              by up to 50%.
+            </li>
+            <li>
+              Established best practices and standards for component
+              development, accessibility, responsive design, and visual
+              consistency across the organization.
+            </li>
+            <li>
+              Improved developer experience through tooling, documentation,
+              automation, and continuous enhancements to the design system,
+              reducing duplicated effort and accelerating feature development.
+            </li>
+            <li>
+              Maintained the reliability and quality of the design system
+              through testing, defect resolution, refactoring, version
+              management, and peer reviews.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <span className="font-semibold">Technologies:</span> React, Next.js,
+          Node.js, Google Cloud Platform
+        </div>
+      </div>
+    ),
+  },
+  {
     id: 4,
     title: "PTN Global Corp",
-    time: "February 2023 - Now",
+    time: "February 2023 - May 2026",
     role: "Software Engineer",
     src: "https://www.ptnglobalcorp.com/",
     description: (
