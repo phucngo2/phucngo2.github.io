@@ -5,15 +5,17 @@ export interface ExperienceItem {
   role: string;
   src: string;
   description?: React.ReactNode;
+  technologies?: string[];
 }
 
 export const experienceData: ExperienceItem[] = [
   {
     id: 5,
     title: "ONE Tech Stop Vietnam",
-    time: "May 2026 - Now",
+    time: "May 2026",
     role: "Software Developer",
     src: "https://ots.one-line.com/vi",
+    technologies: ["React", "Next.js", "Node.js", "Google Cloud Platform"],
     description: (
       <div className="flex flex-col gap-1">
         <div>
@@ -60,11 +62,6 @@ export const experienceData: ExperienceItem[] = [
             </li>
           </ul>
         </div>
-
-        <div>
-          <span className="font-semibold">Technologies:</span> React, Next.js,
-          Node.js, Google Cloud Platform
-        </div>
       </div>
     ),
   },
@@ -74,6 +71,18 @@ export const experienceData: ExperienceItem[] = [
     time: "February 2023 - May 2026",
     role: "Software Engineer",
     src: "https://www.ptnglobalcorp.com/",
+    technologies: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "DotNet",
+      "Vue.js",
+      "React Native",
+      "Wordpress",
+      "PostgreSQL",
+      "SQL Server",
+      "Sencha Ext JS",
+    ],
     description: (
       <div className="flex flex-col gap-1">
         <div>
@@ -116,12 +125,6 @@ export const experienceData: ExperienceItem[] = [
               development consistency.
             </li>
           </ul>
-        </div>
-
-        <div>
-          <span className="font-semibold">Technologies:</span> React, Next.js,
-          Node.js, DotNet, Vue.js, React Native, Wordpress, PostgreSQL, SQL
-          Server, Sencha Ext JS
         </div>
       </div>
     ),
